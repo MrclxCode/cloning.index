@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb Clone - Penginapan & Liburan</title>
+    <!-- Link ke file CSS eksternal -->
+    <link rel="stylesheet" href="asset/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ================= Bagian Header ================= -->
+    <header class="site-header">
+        <div class="container header-container">
+            <!-- Logo -->
+            <div class="logo">
+                <i class="fab fa-airbnb"></i>
+                <span>airbnb</span>
+            </div>
+
+            <!-- Kolom Pencarian -->
+            <div class="search-bar">
+                <button class="search-btn">Ke mana saja</button>
+                <span class="divider"></span>
+                <button class="search-btn">Kapan pun</button>
+                <span class="divider"></span>
+                <button class="search-btn add-guest">Tambahkan tamu</button>
+                <button class="search-icon"><i class="fas fa-search"></i></button>
+            </div>
+
+            <!-- Menu User -->
+            <div class="user-menu">
+                <a href="#" class="host-link">Jadikan rumah Anda Airbnb</a>
+                <button class="globe-icon"><i class="fas fa-globe"></i></button>
+                <div class="profile-dropdown">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-user-circle user-avatar"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= Kategori / Filter ================= -->
+    <nav class="categories-bar">
+        <div class="container categories-container">
+            <div class="category-item active">
+                <i class="fas fa-umbrella-beach"></i>
+                <span>Pantai</span>
+            </div>
+            <div class="category-item">
+                <i class="fas fa-tree"></i>
+                <span>Kabin</span>
+            </div>
+            <div class="category-item">
+                <i class="fas fa-swimming-pool"></i>
+                <span>Kolam renang</span>
+            </div>
+            <div class="category-item">
+                <i class="fas fa-city"></i>
+                <span>Kota ikonik</span>
+            </div>
+            <div class="category-item">
+                <i class="fas fa-campground"></i>
+                <span>Berkemah</span>
+            </div>
+            <div class="category-item">
+                <i class="fas fa-snowflake"></i>
+                <span>Arktik</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= Konten Utama: Grid Penginapan ================= -->
+    <main class="container listings-grid">
+        <!-- Kartu 1 -->
+        <article class="listing-card">
+            <div class="image-wrapper">
+                <img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=600&h=600&fit=crop" alt="Rumah Pantai">
+                <i class="far fa-heart heart-icon"></i>
+            </div>
+            <div class="listing-info">
+                <div class="listing-header">
+                    <h3>Bali, Indonesia</h3>
+                    <span class="rating"><i class="fas fa-star"></i> 4.96</span>
+                </div>
+                <p class="distance">Berjarak 1.200 kilometer</p>
+                <p class="dates">12–17 Nov</p>
+                <p class="price"><strong>Rp 1.500.000</strong> malam</p>
+            </div>
+        </article>
+
+        <!-- Kartu 2 -->
+        <article class="listing-card">
+            <div class="image-wrapper">
+                <img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=600&h=600&fit=crop" alt="Kabin Kayu">
+                <i class="far fa-heart heart-icon"></i>
+            </div>
+            <div class="listing-info">
+                <div class="listing-header">
+                    <h3>Lembang, Bandung</h3>
+                    <span class="rating"><i class="fas fa-star"></i> 4.85</span>
+                </div>
+                <p class="distance">Berjarak 150 kilometer</p>
+                <p class="dates">5–10 Des</p>
+                <p class="price"><strong>Rp 850.000</strong> malam</p>
+            </div>
+        </article>
+
+        <!-- Kartu 3 -->
+        <article class="listing-card">
+            <div class="image-wrapper">
+                <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600&h=600&fit=crop" alt="Apartemen Kota">
+                <i class="far fa-heart heart-icon"></i>
+            </div>
+            <div class="listing-info">
+                <div class="listing-header">
+                    <h3>Jakarta Pusat, Indonesia</h3>
+                    <span class="rating"><i class="fas fa-star"></i> 4.92</span>
+                </div>
+                <p class="distance">Pusat kota</p>
+                <p class="dates">20-25 Okt</p>
+                <p class="price"><strong>Rp 1.200.000</strong> malam</p>
+            </div>
+        </article>
+
+        <!-- Kartu 4 -->
+        <article class="listing-card">
+            <div class="image-wrapper">
+                <img src="https://images.unsplash.com/photo-1449844908441-8829872d2607?w=600&h=600&fit=crop" alt="Villa Tropis">
+                <i class="far fa-heart heart-icon"></i>
+            </div>
+            <div class="listing-info">
+                <div class="listing-header">
+                    <h3>Ubud, Bali</h3>
+                    <span class="rating"><i class="fas fa-star"></i> 5.0</span>
+                </div>
+                <p class="distance">Berjarak 1.150 kilometer</p>
+                <p class="dates">1–7 Jan</p>
+                <p class="price"><strong>Rp 2.100.000</strong> malam</p>
+            </div>
+        </article>
+    </main>
+
+    <!-- ================= Bagian Footer ================= -->
+    <footer class="site-footer">
+        <div class="container footer-inspiration">
+            <h2>Inspiration for future getaways</h2>
+            <div class="inspiration-tabs">
+                <span class="tab active">Popular</span>
+                <span class="tab">Arts & culture</span>
+                <span class="tab">Beach</span>
+                <span class="tab">Mountains</span>
+                <span class="tab">Outdoors</span>
+            </div>
+            
+            <div class="inspiration-grid">
+                <div class="location-item">
+                    <h4>St. Petersburg</h4>
+                    <p>House rentals</p>
+                </div>
+                <div class="location-item">
+                    <h4>Raleigh</h4>
+                    <p>Vacation rentals</p>
+                </div>
+                <div class="location-item">
+                    <h4>San Diego</h4>
+                    <p>Cottage rentals</p>
+                </div>
+                <div class="location-item">
+                    <h4>Detroit</h4>
+                    <p>Condo rentals</p>
+                </div>
+                <div class="location-item">
+                    <h4>Albuquerque</h4>
+                    <p>Vacation rentals</p>
+                </div>
+                <div class="location-item">
+                    <h4>Portland</h4>
+                    <p>Cabin rentals</p>
+                </div>
+                <div class="location-item">
+                    <h4>Pittsburgh</h4>
+                    <p>Apartment rentals</p>
+                </div>
+                <div class="location-item">
+                    <h4>Honolulu</h4>
+                    <p>Vacation rentals</p>
+                </div>
+                <div class="location-item">
+                    <h4>Memphis</h4>
+                    <p>Monthly rentals</p>
+                </div>
+                <div class="location-item">
+                    <h4>Oahu</h4>
+                    <p>Monthly rentals</p>
+                </div>
+                <div class="location-item">
+                    <h4>Fort Lauderdale</h4>
+                    <p>Monthly rentals</p>
+                </div>
+                <div class="location-item">
+                    <h4>Show more <i class="fas fa-chevron-down"></i></h4>
+                </div>
+            </div>
+        </div>
+
+        <hr class="footer-divider">
+
+        <div class="container footer-main">
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">AirCover</a></li>
+                    <li><a href="#">Disability support</a></li>
+                    <li><a href="#">Cancellation options</a></li>
+                    <li><a href="#">Report neighborhood concern</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Hosting</h3>
+                <ul>
+                    <li><a href="#">Airbnb your home</a></li>
+                    <li><a href="#">AirCover for Hosts</a></li>
+                    <li><a href="#">Hosting resources</a></li>
+                    <li><a href="#">Community forum</a></li>
+                    <li><a href="#">Hosting responsibly</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Airbnb</h3>
+                <ul>
+                    <li><a href="#">Newsroom</a></li>
+                    <li><a href="#">New features</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Investors</a></li>
+                    <li><a href="#">Airbnb.org emergency stays</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="footer-divider">
+
+        <div class="container footer-bottom">
+            <div class="bottom-left">
+                <span>© 2026 Airbnb, Inc.</span>
+                <span class="dot">·</span>
+                <a href="#">Privacy</a>
+                <span class="dot">·</span>
+                <a href="#">Terms</a>
+                <span class="dot">·</span>
+                <a href="#">Sitemap</a>
+            </div>
+            <div class="bottom-right">
+                <a href="#"><i class="fas fa-globe"></i> English (US)</a>
+                <a href="#">Rp IDR</a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
